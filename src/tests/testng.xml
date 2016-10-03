@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Complex Numbers Calculator tests" verbose="5" thread-count="1" preserve-order="true" parallel="methods">
+    <test name="Basic operations">
+        <groups>
+            <run>
+                <include name="positive"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.TestNGCalculator"/>
+        </classes>
+    </test>
+    <test name="Negative cases">
+        <groups>
+            <run>
+                <include name="negative"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.TestNGCalculator"/>
+        </classes>
+    </test>
+</suite>
